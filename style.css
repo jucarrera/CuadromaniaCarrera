@@ -36,7 +36,7 @@ footer p:hover {
 }
 
 footer a:link {
-  color: rgb(241, 10, 137);
+  color: rgb(138, 18, 84);
 }
 
 footer a:visited {
@@ -65,12 +65,6 @@ footer a:visited {
   border: 3px solid rgb(233, 38, 71);
 }
 
-.ab {
-  background-color: rgb(233, 223, 220);
-  grid-area: ab;
-}
-
-
 .c {
   background-color: rgb(243, 229, 233);
   grid-area: c;
@@ -95,6 +89,7 @@ footer a:visited {
       ".h2"
       ".hijo"
       ".img"
+      
   }
  
 }
@@ -113,6 +108,7 @@ footer a:visited {
       ".h2"
       ".hijo"
       ".img"
+      
   
 }
 .row>.col, .bd-example-row .row>[class^="col-"]{
