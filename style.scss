@@ -1,0 +1,43 @@
+$primary-color: rgb(238, 82, 108);
+@mixin bg-color ($color:rgb(112, 93, 9)){
+    background-color: $color;
+}
+
+body {@include bg-color($footer-color)
+    
+}
+
+p {
+    background-color: rgb(4, 126, 126);
+}
+
+h1 {
+    background-color: $primary-color;
+}
+
+footer {
+    background-color: blueviolet;
+
+    p {
+        background-color: coral;
+        height: 200px;
+
+        &:hover {
+            background-color: darkgoldenrod;
+        }
+    }
+
+    a {
+        &:link {
+            color: #000;
+        }
+
+        &:visited {
+            color: beige;
+        }
+    }
+}
+nav{
+    @extend footer;
+    p {height: 100px;}
+}

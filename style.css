@@ -1,0 +1,125 @@
+body {
+  background-color: #f5d0db;
+}
+
+body p {
+  background-color: #e96279;
+  color: rgb(240, 230, 240);
+  text-align:center;
+  text-decoration-line:none;
+  font-size:xx-large;
+}
+
+
+h1 {
+  background-color: #e96279;
+  text-align: center;
+  color: rgb(247, 241, 242);
+  font-size:x-large
+}
+h2{
+  color: rgb(240, 68, 134);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #078f62;
+
+}
+
+
+
+footer p {
+  background-color: coral;
+  height: 180px;
+}
+
+footer p:hover {
+  background-color: rgb(238, 106, 45);
+}
+
+footer a:link {
+  color: rgb(241, 10, 137);
+}
+
+footer a:visited {
+  color: rgb(80, 80, 70);
+  font-size:medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.contenedor {
+  background-color: beige;
+  width: 90%;
+  height: 80vh;
+  border: black;
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  grid-template-areas: "ab ab c""d ef ef";
+}
+
+.hijo {
+  background-color: rgb(241, 225, 233);
+  border: 3px solid rgb(233, 38, 71);
+}
+
+.ab {
+  background-color: rgb(233, 223, 220);
+  grid-area: ab;
+}
+
+
+.c {
+  background-color: rgb(243, 229, 233);
+  grid-area: c;
+}
+
+.d {
+  background-color: rgb(240, 226, 228);
+  grid-area: d;
+}
+@media screen and (max-width:900px) {
+  .contenedor{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "a" "b" "c" "d" "e" "f";
+      grid-template-areas: 
+      ".header "
+      ".main"
+      ".aside"
+      ".footer"
+      ".p"
+      ".h1"
+      ".h2"
+      ".hijo"
+      ".img"
+  }
+ 
+}
+@media screen and (max-width:200px) {
+  .contenedor{
+    grid-template-columns: 2fr;
+    grid-template-rows: 3fr;
+      grid-template-areas: "ab" "cd" "ef";
+      grid-template-areas: 
+      ".header "
+      ".main"
+      ".aside"
+      ".footer"
+      ".p"
+      ".h1"
+      ".h2"
+      ".hijo"
+      ".img"
+  
+}
+.row>.col, .bd-example-row .row>[class^="col-"]{
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: rgb(224, 184, 81);
+  border: 1px solid rgb(41, 40, 40)
+}
+
+}
